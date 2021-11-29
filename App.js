@@ -1,21 +1,47 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import {
+    ImageBackground,
+    StyleSheet,
+    View,
+} from 'react-native';
+import MainIcon from "./components/MainIcon";
+import NavBar from "./components/NavBar";
 
-export default function App() {
-  return (
+const App = () => (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+        <NavBar>
+        </NavBar>
+        <ImageBackground source={require('./img/FB_IMG_1633457497698002.jpg')} style={styles.image}>
+            <MainIcon>
+            </MainIcon>
+        </ImageBackground>
     </View>
-  );
-}
+);
+
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+    container: {
+        flex: 1,
+        flexDirection: 'column',
+    },
+    image: {
+        flex: 1,
+        resizeMode: 'cover',
+        justifyContent: 'center',
+    },
+    text: {
+        color: 'white',
+        fontSize: 42,
+        fontWeight: 'bold',
+        textAlign: 'center',
+        backgroundColor: '#000000a0',
+    },
+    headerText: {
+        fontSize: 20,
+        textAlign: "center",
+        margin: 10,
+        fontWeight: "bold"
+    },
 });
+
+export default App;
