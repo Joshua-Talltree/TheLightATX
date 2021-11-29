@@ -1,11 +1,11 @@
 import React from "react";
 import { View, Text, StyleSheet } from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import Icon from "react-native-vector-icons/FontAwesome";
 
-const SearchButton = () => (
+const SettingsButton = () => (
     <View style={styles.content}>
         <Icon.Button
-            name="search"
+            name="gear"
             color="black"
             backgroundColor="white"
         >
@@ -21,4 +21,4 @@ const styles = StyleSheet.create({
 });
 
 
-export default SearchButton;
+export default SettingsButton;

@@ -7,6 +7,7 @@ import {
 import MainIcon from "./components/MainIcon";
 import NavBar from "./components/NavBar";
 
+
 const App = () => (
     <View style={styles.container}>
         <NavBar>

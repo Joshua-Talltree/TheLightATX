@@ -2,6 +2,7 @@ import React from 'react';
 import { View, StyleSheet } from 'react-native';
 import NavigationBar from 'react-native-navbar';
 import SearchButton from "./SearchButton";
+import SettingsButton from "./SettingsButton";
 
 const leftButtonConfig = {
     title: 'Settings',
@@ -25,7 +26,10 @@ const NavBar = () => (
                 <SearchButton>
                 </SearchButton>
             }
-            leftButton={leftButtonConfig}
+            leftButton={
+                <SettingsButton>
+                </SettingsButton>
+            }
         />
     </View>
 );
