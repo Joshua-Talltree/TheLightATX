@@ -20,10 +20,12 @@ const styles = StyleSheet.create({
         },
     },
     textStyle: {
+        alignItems: 'center',
+        justifyContent: 'center',
         textAlign: 'center',
         color: 'black',
         fontSize: 18,
-        padding: 7,
+        padding: 18,
     },
 });
 
