@@ -1,20 +1,30 @@
 import React from 'react';
-import { View, Text } from 'react-native';
-import StickyHeaderFooterScrollView from 'react-native-sticky-header-footer-scroll-view';
+import { View, Text, StyleSheet } from 'react-native';
 
 
 const Footer = () => (
-    <StickyHeaderFooterScrollView
-        renderStickyFooter={() => (
-            <View style="...">
-                <Text>{`I'm a sticky footer`}</Text>
-            </View>
-        )}
-    >
-        <View style={{ height: 100, backgroundColor: '#eee' }}>
-            <Text>View made scrollable</Text>
-        </View>
-    </StickyHeaderFooterScrollView>
-)
+    <View style={styles.footerStyle}>
+        <Text style={styles.textStyle}>The Light ATX Footer</Text>
+    </View>
+);
+
+const styles = StyleSheet.create({
+    footerStyle: {
+        width: '100%',
+        height: 65,
+        backgroundColor: 'white',
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 3,
+        },
+    },
+    textStyle: {
+        textAlign: 'center',
+        color: 'black',
+        fontSize: 18,
+        padding: 7,
+    },
+});
 
 export default Footer;

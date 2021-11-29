@@ -6,6 +6,7 @@ import {
 } from 'react-native';
 import MainIcon from "./components/MainIcon";
 import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 
 
 const App = () => (
@@ -16,6 +17,8 @@ const App = () => (
             <MainIcon>
             </MainIcon>
         </ImageBackground>
+        <Footer>
+        </Footer>
     </View>
 );
 

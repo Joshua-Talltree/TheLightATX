@@ -37,9 +37,10 @@ const NavBar = () => (
 const styles = StyleSheet.create({
     container: {
         flex: 0,
+        height: 80,
         marginTop: 0,
         paddingTop: 32,
-        backgroundColor: "#61dafb",
+        backgroundColor: "white",
     },
 });
 
